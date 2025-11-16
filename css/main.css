@@ -1,4 +1,4 @@
-html{
+html {
     --fontTitle: "Montserrat Alternates", sans-serif;
     --fontText: "Funnel Sans", sans-serif;
     --bgColor: #FFF6E3;
@@ -7,35 +7,65 @@ html{
     --txtColor: black;
 
 }
-#bdy{
-   background-color: var(--bgColor);
+
+#bdy {
+    background-color: var(--bgColor);
 }
 
-.navbar{
+.navbar {
     background-color: var(--primaryColor);
 }
-.navBarItem{
+
+.navBarItem {
     background-color: var(--secondaryColor);
     border-radius: 5px;
     margin-left: 25px;
     padding: 5px;
+    font-family: var(--fontTitle);
 }
-.carousel{
-    margin-top:20px;
+.navBarItem a:hover{
+    color: var(--bgColor);
+    font-size: 20px;
+    padding: 5px;
+
 }
 
-.carrusel{
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--fontTitle);
+}
+
+p {
+    font-family: var(--fontText);
+
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carrusel {
     color: var(--txtColor);
 
- 
-}
- .carousel-item img {
-      height: 550px;
-      width: 550px;
-      object-fit: cover;
-      border-radius: 25px;
-    }
 
-   footer{
-        background-color: var(--primaryColor);
-    }
+}
+
+.carousel-item img {
+    height: 550px;
+    width: 550px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#btnForm {
+    background-color: var(--secondaryColor);
+}
+#carritop{
+    background-color: var(--secondaryColor);
+}
+footer {
+    background-color: var(--primaryColor);
+}
