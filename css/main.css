@@ -1,0 +1,41 @@
+html{
+    --fontTitle: "Montserrat Alternates", sans-serif;
+    --fontText: "Funnel Sans", sans-serif;
+    --bgColor: #FFF6E3;
+    --primaryColor: #FFCCEA;
+    --secondaryColor: #BFECFF;
+    --txtColor: black;
+
+}
+#bdy{
+   background-color: var(--bgColor);
+}
+
+.navbar{
+    background-color: var(--primaryColor);
+}
+.navBarItem{
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    margin-left: 25px;
+    padding: 5px;
+}
+.carousel{
+    margin-top:20px;
+}
+
+.carrusel{
+    color: var(--txtColor);
+
+ 
+}
+ .carousel-item img {
+      height: 550px;
+      width: 550px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+   footer{
+        background-color: var(--primaryColor);
+    }

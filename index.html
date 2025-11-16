@@ -2,80 +2,155 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="icon" href="./assets/maDi.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Inicio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<body id="bdy">
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand navBarItem" href="./index.html">Pasteleria MaDi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item navBarItem">
+              <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item navBarItem">
+              <a class="nav-link " href="./contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item navBarItem">
+              <a class="nav-link" href="./carrito.html">Carrito</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Carrusel principal-->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="./assets/tarta_frutas.jpg" class="d-block mx-auto" alt="Tarta de frutas">
+
+        <div class="carousel-caption d-none d-md-block" id="">
+          <h1 class="carrusel">Tarta de frutas</h1>
+          <p>Rica tarta de frutas</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./assets/empanadas.jpg" class="d-block mx-auto" alt="empanadas">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="carrusel">Empanadas</h1>
+          <p>Rellenas de philadelphia</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/pastel_cajeta.jpg" class="d-block mx-auto" alt="Pastel de cajeta">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="carrusel">Patel de cajeta</h1>
+          <p>Rico pastel de cajeta, esta relleno</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./carrito.html">Carrito</a>
-        </li>
-      </ul>
-    </div>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</nav>
-<!--Carrusel principal-->
+  <div class="container mt-5">
 
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="..." class="d-block w-100" alt="Pastel de zanahorias">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Pastel de zanahorias</p>
-      </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="..." class="d-block w-100" alt="Tarta de frutas">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Tarta de frutas</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="Pastel de cajeta">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Pastel de cajeta</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+    <h2 class="text-center mb-4">Postres más populares</h2>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <div class="row">
+
+      <!-- Columna 1 -->
+      <div class="col-md-4">
+
+        <div class="card mb-3" style="width: 100%;">
+          <img src="./assets/galletas.jpg" class="card-img-top" alt="Galletas de chocolate">
+          <div class="card-body">
+            <h5 class="card-title">Galletas de chispas de chocolate</h5>
+            <p class="card-text">Galletas con chispas de chocolate deliciosas</p>
+            <p class="card-text">Llévate un paquete de 3 pzas</p>
+            <a href="./productos.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna 4 -->
+      <div class="col-md-4">
+
+        <div class="card mb-3" style="width: 100%;">
+          <img src="./assets/pastel_duraznos.jpg" class="card-img-top" alt="Pastel de duraznos">
+          <div class="card-body">
+            <h5 class="card-title">Pastel de duraznos</h5>
+            <p class="card-text">Pastel tipo cheescake muy cremoso</p>
+            <p class="card-text">Tenemo tamaño mediano y grande</p>
+            <a href="./productos.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="col-md-4">
+
+        <div class="card mb-3" style="width: 100%;">
+          <img src="./assets/pan_muerto.jpg" class="card-img-top" alt="Pan de muerto">
+          <div class="card-body">
+            <h5 class="card-title">Pan de muerto</h5>
+            <p class="card-text">Rico pan de muerto especial de temporada</p>
+            <p class="card-text">Llevate un paquete con 6 piezas</p>
+            <a href="./productos.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!--footer-->
+  <footer class=" text-white text-center py-3">
+    © 2025 Reposteria MaDi — Todos los derechos reservados.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
 </body>
+
 
 </html>
